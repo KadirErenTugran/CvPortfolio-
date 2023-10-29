@@ -1,0 +1,250 @@
+body {
+ 
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #5e0b0b;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#3d3d3d;
+    color:	white;
+    padding: 20px 0;
+    font-size: xx-large;
+    position: sticky;
+    z-index: 100;
+    top: 0
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+    
+}
+
+
+
+#glitch-effect {
+    position: relative;
+    padding: 10px;
+    transition: all 0.5s ease;
+    border: 2px solid white;
+}
+
+h1#glitch-effect:hover {
+    position: relative;
+    padding: 10px;
+    animation: glitch 1s both;
+}
+@keyframes glitch {
+    0%, 100% {
+        text-shadow: -4px -4px 0 #b33939, 4px 4px 0 #00ffff, 1px 1px 0 #ff00ff, -2px -2px 0 #00ffff, 2px 2px 0 #b33939, 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    2% {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), -4px -4px 0 #b33939, 4px 4px 0 #00ffff, 1px 1px 0 #ff00ff, -2px -2px 0 #00ffff, 2px 2px 0 #b33939;
+    }
+    4% {
+        text-shadow: -2px -2px 0 #00ffff, 2px 2px 0 #b33939, 0 0 5px rgba(0, 0, 0, 0.5), -4px -4px 0 #b33939, 4px 4px 0 #00ffff, 1px 1px 0 #ff00ff;
+    }
+    6% {
+        text-shadow: 1px 1px 0 #ff00ff, -2px -2px 0 #00ffff, 2px 2px 0 #b33939, 0 0 5px rgba(0, 0, 0, 0.5), -4px -4px 0 #b33939, 4px 4px 0 #00ffff;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color:	white;
+    font-size: x-large;
+    
+}
+/* Hakkında Bölümü*/ 
+.aboutme{
+    height: 1000px;
+    width: auto;
+    background-color: white;
+}
+
+.aboutme>#baslik{
+    color: 	#091833;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    animation: glitch 23s infinite;
+    padding-top: 100px;
+}
+.aboutme>h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.aboutme p{
+    padding: 20px;
+    padding-top: 170px;
+    font-size: 2rem    
+    
+    
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: #b33939;
+    border-radius: 50%;
+    z-index: -22;
+}
+.aboutme img {
+    margin-right: 14px;
+    float: left;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    height: 300px;
+    width: 300px;
+    padding-top: 100px;
+
+}
+.aboutme> img:hover {
+    transform: scale(1.1);
+    
+}
+
+.glitch:hover{
+    animation: glitch 1s infinite;
+}
+#benkadir{
+    font-weight: 900;
+    font-size: x-large;
+    display: block;
+    text-transform: uppercase;
+
+}
+/*yetenekler bölümü tasarımı için*/
+.yetenekler{
+    margin: 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.yetenek>h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.yetenek {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    animation: animasyon1 4s ease-in-out;
+}
+
+@keyframes animasyon1 {
+    0% {
+        width: 0;
+    }
+}
+/*iletişim bölümü*/
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+#iletisim a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+#iletisim a:hover {
+    color: red;
+}
+
+#mail{
+    margin-top: 20px;
+}
+
+h4 {
+  
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@media(max-width:680px) {
+    
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    text-align: center;
+} 
+
+#navbar>* {
+    display: flex;
+    flex-direction: column;
+}
+
+li,a{
+    font-weight: bolder;
+    padding-bottom: 20px;
+    
+}
+    #navbar>h1{
+        padding-left: 40px;
+        font-size: x-large;
+    }
+
+}
